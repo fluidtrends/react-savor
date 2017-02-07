@@ -1,10 +1,5 @@
-import React, {
-    View,
-    Text,
-    StyleSheet
-} from 'react-native'
 import savor from '../../../..'
-import BasicComponent from '../assets/react-native/BasicComponent'
+import BasicComponent from '../assets/react/BasicComponent'
 
 const TestText = (<Text>test</Text>)
 const TestComponent = (<BasicComponent/> )

@@ -7,6 +7,11 @@
 var savor = require("savor");
 
 /**
+ *  For full DOM testing
+ **/
+var jsdom = require('jsdom');
+
+/**
  *  We're using Chai.JS as our BDD assertion library, and specifically,
  *  we want to write our specs using the expect assert style.
  **/
@@ -19,14 +24,20 @@ var enzyme = require('enzyme');
 var chaiEnzyme = require('chai-enzyme');
 chai.use(chaiEnzyme())
 
-
 /**
  *   Extend the root context to include enzyme tools
  **/
 savor.context = Object.assign(savor.context, {
   mount: enzyme.mount,
   render: enzyme.render,
-  shallow: enzyme.shallow
+  shallow: enzyme.shallow,
+  dom: jsdom
 });
+
+savor.addDom = function(dom) {
+  var doc = jsdom.jsdom(dom)
+  global.document = doc
+  global.window = doc.defaultView
+}
 
 module.exports = savor;

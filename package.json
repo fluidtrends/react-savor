@@ -1,6 +1,6 @@
 {
   "name": "react-savor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple way of adding tests (and more) to your React apps",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,8 @@
       "transform-react-jsx"
     ],
     "presets": [
-      "react", "es2015"
+      "react",
+      "es2015"
     ]
   },
   "keywords": [
@@ -56,6 +57,7 @@
     "chai-enzyme": "^0.6.1",
     "enzyme": "^2.6.0",
     "eslint-plugin-react": "^6.8.0",
+    "jsdom": "^9.10.0",
     "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.4.1",
     "savor": "0.x",
