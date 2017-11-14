@@ -24,6 +24,10 @@ var enzyme = require('enzyme');
 var chaiEnzyme = require('chai-enzyme');
 chai.use(chaiEnzyme())
 
+var Adapter = require('enzyme-adapter-react-16');
+enzyme.configure({ adapter: new Adapter() });
+
+
 /**
  *   Extend the root context to include enzyme tools
  **/
