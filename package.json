@@ -1,12 +1,13 @@
 {
   "name": "react-savor",
-  "version": "0.5.0",
+  "version": "0.5.2",
   "description": "A simple way of adding tests (and more) to your React apps",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers js:babel-core/register --recursive test/specs/**/*.js",
     "coverage": "./node_modules/.bin/babel-node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --report lcovonly test/specs/**/*.js",
-    "lint": "./node_modules/.bin/standard src/**/*.js test/**/*.js"
+    "lint": "./node_modules/.bin/standard src/**/*.js test/**/*.js",
+    "doc": "./node_modules/.bin/esdoc"
   },
   "bin": {
     "react-savor": "bin/index.js"
