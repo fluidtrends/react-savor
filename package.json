@@ -1,6 +1,6 @@
 {
   "name": "react-savor",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "description": "A simple way of adding tests (and more) to your React apps",
   "main": "index.js",
   "scripts": {
@@ -58,7 +58,7 @@
     "jsdom": "^9.10.0",
     "react-dom": "^16.1.1",
     "react-element-to-jsx-string": "^13.0.0",
-    "savor": "0.x",
+    "savor": "^1.0.0",
     "webpack": "^1.14.0"
   },
   "devDependencies": {
