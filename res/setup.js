@@ -21,4 +21,10 @@ global.requestAnimationFrame = function (callback) {
 global.cancelAnimationFrame = function (id) {
   clearTimeout(id);
 };
+global.localStorage = {
+  setItem: (key, value, callback) => callback(),
+  getItem: (key, callback) => callback(null, JSON.stringify({ test: 'test', username: 'test' })),
+  removeItem: (key, callback) => callback()
+}
+global.storage = global.localStorage
 copyProps(window, global);

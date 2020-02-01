@@ -1,6 +1,6 @@
 {
   "name": "react-savor",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A simple way of adding tests (and more) to your React apps",
   "main": "index.js",
   "scripts": {
