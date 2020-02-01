@@ -21,7 +21,7 @@ global.requestAnimationFrame = function (callback) {
 global.cancelAnimationFrame = function (id) {
   clearTimeout(id);
 };
-global.fetch = Promise.resolve({ data: "test" })
+global.fetch = () => Promise.resolve({ data: "test" })
 global.localStorage = {
   setItem: (key, value, callback) => callback(),
   getItem: (key, callback) => callback(null, JSON.stringify({ test: 'test', username: 'test' })),
