@@ -38,10 +38,4 @@ savor.context = Object.assign(savor.context, {
   dom: jsdom
 });
 
-savor.addDom = function(dom) {
-  var doc = jsdom.jsdom(dom)
-  global.document = doc
-  global.window = doc.defaultView
-}
-
 module.exports = savor;
