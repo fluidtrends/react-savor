@@ -13,6 +13,7 @@ function copyProps(src, target) {
 global.window = window
 global.window.scrollTo = () => ({})
 global.document = window.document
+global.window.open = () => ({})
 
 global.navigator = { userAgent: 'node.js' }
 
