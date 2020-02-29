@@ -1,0 +1,7 @@
+node_modules
+.git
+coverage
+package-lock.json
+.DS_Store
+.nyc_output
+test
