@@ -1,6 +1,6 @@
 {
   "name": "react-savor",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A simple way of adding tests (and more) to your React apps",
   "main": "index.js",
   "scripts": {
@@ -44,7 +44,8 @@
   "files": [
     "index.js",
     "src/**/*",
-    "bin/**/*"
+    "bin/**/*",
+    "res/**/*"
   ],
   "homepage": "https://github.com/fluidtrends/react-savor",
   "dependencies": {
